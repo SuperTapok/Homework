@@ -5,11 +5,10 @@ print("input array: ", arr)
 max_value = arr.max()
 min_value = arr.min()
 arr.sort()
-middle_value = 0
 sum = 0
 for i in arr:
     sum += i
-middle_value = sum/arr.shape[0]
+avr_value = sum / arr.shape[0]
 median_value = arr[arr.shape[0]//2]
-print("Minimal value: %.0f, maximal value: %.0f, middle value: %.2f, median value: %.0f" % (min_value, max_value,
-                                                                                            middle_value, median_value))
+print("Minimal value: %.0f, maximal value: %.0f, average value: %.2f, median value: %.0f" % (min_value, max_value,
+                                                                                            avr_value, median_value))
